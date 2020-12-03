@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;700&family=Pacifico&display=swap');
+
+/* ================================================================================ */
+/* UTILITIES */
+/* UTILITIES */
+/* UTILITIES */
+/* ================================================================================ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 1.2px;
+}
+
+:root {
+  --color-cultured: #f7f9f9;
+  --color-opal: #bed8d4;
+  --color-medium-turquoise: #78d5d7;
+  --color-baby-blue: #63d2ff;
+  --color-green-blue-crayola: #2081c3;
+  --color-lighter-blue: #5379ff;
+  --color-darker-blue: #0038ff;
+  --color-grey: #333;
+  --color-contrast-1: red;
+  --color-contrast-2: darkorange;
+  --color-contrast-3: orange;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ================================================================================ */
+/* HERO SECTION */
+/* HERO SECTION */
+/* HERO SECTION */
+/* ================================================================================ */
+#hero {
+  width: 100vw;
+  height: 100vh;
+}
+
+#hero-img {
+  width: 100%;
+  height: 100%;
+  background: url('./assets/hero-img-1.png') no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#hero-container {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#logo-main {
+  width: 200px;
+}
+
+h1 {
+  text-align: center;
+  color: var(--color-cultured);
+  font-weight: 400;
+  font-size: 1.6rem;
+  letter-spacing: 1.4px;
+  text-shadow: 0 5px 10px rgba(0, 0, 100, 0.95);
+}
+
+h1 span {
+  font-size: 1.2rem;
+  font-weight: 100;
+  text-shadow: 0 5px 10px rgba(0, 0, 100, 0.95);
+}
+
+#hero-links {
+  width: 140px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#hero-links a i {
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(var(--color-contrast-1), var(--color-contrast-2));
+  color: var(--color-cultured);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ================================================================================ */
+/* ABOUT SECTION */
+/* ABOUT SECTION */
+/* ABOUT SECTION */
+/* ================================================================================ */
+
+#about {
+  height: 100vh;
+  width: 100vw;
+  background: var(--color-cultured);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+#about-left {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+#about-card {
+  width: 100%;
+  height: 100%;
+  padding: 2rem 3rem;
+  background-color: var(--color-cultured);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+#about-card h2 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+#about-card p {
+  line-height: 1.8rem;
+  font-size: 0.8rem;
+  font-weight: 100;
+}
+
+#about-card h3 {
+  font-size: 1.7rem;
+  font-weight: 500;
+  text-align: left;
+}
+
+#about-card img {
+  position: absolute;
+  top: 40%;
+  left: 0;
+  width: 100%;
+  transform: rotate(90deg);
+  filter: invert(0.5);
+  opacity: 0.1;
+}
+
+/* ================================================================================ */
+/* COPY 1 SECTION */
+/* COPY 1 SECTION */
+/* COPY 1 SECTION */
+/* ================================================================================ */
+#copy-1 {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--color-opal);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#copy-1 h2 {
+  /* color: var(--color-cultured); */
+  font-weight: 400;
+  font-size: 4rem;
+  line-height: 8rem;
+  margin-top: 3rem;
+  margin-left: 6rem;
+}
+
+#copy-1 img {
+  width: 100%;
+}
+
+/* ================================================================================ */
+/* DESKTOP MEDIA QUERY */
+/* DESKTOP MEDIA QUERY */
+/* DESKTOP MEDIA QUERY */
+/* ================================================================================ */
+
+@media (min-width: 576px) {
+  #hero {
+    height: 60vh;
+  }
+
+  h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+  }
+
+  h1 span {
+    font-weight: 200;
+    font-size: 1.5rem;
+  }
+
+  #about {
+    height: 900px;
+    padding: 2rem 4rem;
+  }
+
+  #about-card {
+    width: 50%;
+    height: 80%;
+    padding: 2rem 6rem;
+    background-color: var(--color-cultured);
+    box-shadow: 0 0 15px rgba(0, 0, 100, 0.25);
+    position: absolute;
+  }
+
+  #about-card img {
+    top: 15%;
+    filter: invert(0.3);
+  }
+
+  #about-card h2 {
+    font-size: 4rem;
+    font-weight: 700;
+  }
+
+  #about-card h3 {
+    text-align: right;
+  }
+
+  #about-right {
+    width: 100%;
+    height: 100%;
+    background: url('./assets/img-about-1.jpg') no-repeat center center/cover;
+  }
+
+  #copy-1 {
+    height: 800px;
+    padding: 2rem 4rem;
+  }
+}
