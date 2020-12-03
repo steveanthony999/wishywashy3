@@ -153,7 +153,7 @@ h1 span {
   position: absolute;
   top: 40%;
   left: 0;
-  width: 100%;
+  width: 90%;
   transform: rotate(90deg);
   filter: invert(0.5);
   opacity: 0.1;
@@ -170,20 +170,32 @@ h1 span {
   background-color: var(--color-opal);
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 #copy-1 h2 {
-  /* color: var(--color-cultured); */
+  color: var(--color-grey);
   font-weight: 400;
-  font-size: 4rem;
-  line-height: 8rem;
+  font-size: 3rem;
+  line-height: 4rem;
   margin-top: 3rem;
-  margin-left: 6rem;
+  margin-left: 2rem;
+  align-self: flex-start;
+  width: 50%;
 }
 
 #copy-1 img {
   width: 100%;
+}
+
+#copy-1-img-lg {
+  display: none;
+}
+
+#copy-1-img-sm {
+  width: 256px;
+  margin-bottom: 2rem;
 }
 
 /* ================================================================================ */
@@ -245,5 +257,27 @@ h1 span {
   #copy-1 {
     height: 800px;
     padding: 2rem 4rem;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  #copy-1 h2 {
+    font-size: 4rem;
+    line-height: 8rem;
+    margin-left: 6rem;
+  }
+
+  #copy-1-img-sm {
+    display: none;
+  }
+
+  #copy-1-img-lg {
+    display: block;
+  }
+}
+
+@media (max-height: 569px) {
+  #about-card p {
+    line-height: 1.2rem;
   }
 }
