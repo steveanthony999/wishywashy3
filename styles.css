@@ -305,7 +305,7 @@ h1 span {
 #testimonials {
   width: 100vw;
   padding: 4rem 0;
-  background: linear-gradient(-175deg, var(--color-green-blue-crayola), var(--color-darker-blue));
+  background: linear-gradient(var(--color-lighter-blue), var(--color-green-blue-crayola));
   display: flex;
   flex-direction: column;
   align-items: center;
