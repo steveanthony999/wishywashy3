@@ -591,6 +591,19 @@ h1 span {
   outline: none;
 }
 
+#contact #contact-footer {
+  background-color: var(--color-cultured);
+  padding: 2rem 1rem;
+}
+
+#contact #contact-footer p {
+  font-size: 0.75rem;
+}
+
+#contact #contact-footer p a {
+  text-decoration: underline;
+}
+
 /* ================================================================================ */
 /* DESKTOP MEDIA QUERY */
 /* DESKTOP MEDIA QUERY */
@@ -742,6 +755,20 @@ h1 span {
 @media (max-height: 569px) {
   #about-card p {
     line-height: 1.2rem;
+  }
+
+  #testimonials #testimonials-head h2 {
+    font-size: 3rem;
+    font-weight: 400;
+    margin-top: 0.5rem;
+  }
+
+  #testimonials #testimonials-body .testimonials-card:first-child {
+    margin-top: 1rem;
+  }
+
+  #testimonials #testimonials-body .testimonials-card {
+    margin-top: 8rem;
   }
 }
 
