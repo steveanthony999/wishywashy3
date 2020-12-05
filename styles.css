@@ -31,6 +31,12 @@ body {
   --color-contrast-3: orange;
 }
 
+input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
 a {
   text-decoration: none;
 }
