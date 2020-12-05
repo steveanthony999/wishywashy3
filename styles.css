@@ -469,6 +469,129 @@ h1 span {
 }
 
 /* ================================================================================ */
+/* CONTACT SECTION */
+/* CONTACT SECTION */
+/* CONTACT SECTION */
+/* ================================================================================ */
+
+#contact {
+  background-color: var(--color-grey);
+  text-align: center;
+}
+
+#contact #contact-head {
+  padding: 4rem 0;
+}
+
+#contact #contact-head h2 {
+  color: var(--color-cultured);
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+#contact #contact-body {
+  padding-bottom: 4rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#contact #contact-body #contact-social {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#contact #contact-body #contact-social #social-wrapper a {
+  margin-bottom: 2rem;
+  color: var(--color-cultured);
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+}
+
+#contact #contact-body #contact-social #social-wrapper a i {
+  width: 4rem;
+  height: 4rem;
+  margin-right: 2rem;
+  background-color: var(--color-cultured);
+  color: var(--color-grey);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#contact #contact-body #contact-seperator {
+  width: 10%;
+}
+
+#contact #contact-body #contact-seperator-mobile {
+  display: none;
+}
+
+#contact #contact-body #contact-seperator img {
+  width: 30px;
+}
+
+#contact #contact-body #contact-form {
+  width: 45%;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+}
+
+#contact #contact-body #contact-form form {
+  /* width: 50%; */
+  display: flex;
+  flex-direction: column;
+}
+
+#contact #contact-body #contact-form form input[type='text'],
+#contact #contact-body #contact-form form input[type='email'],
+#contact #contact-body #contact-form form #message {
+  padding: 1rem 1rem;
+  margin-top: 2rem;
+  font-size: 1.2rem;
+  /* color: var(--color-grey); */
+  color: var(--color-cultured);
+  background: transparent;
+  border: 2px solid var(--color-cultured);
+  border-radius: 35px;
+}
+
+#contact #contact-body #contact-form form #message {
+  resize: none;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 1.2px;
+}
+
+#contact #contact-body #contact-form form input[type='submit'] {
+  padding: 1rem 3rem;
+  border: none;
+  margin-top: 2rem;
+  border-radius: 25px;
+  box-shadow: 0 3px 1px rgba(0, 0, 0, 0.25);
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 1.1px;
+  background-color: var(--color-darker-blue);
+  color: var(--color-cultured);
+}
+
+#contact #contact-body #contact-form form input[type='submit']:hover {
+  cursor: pointer;
+}
+
+#contact #contact-body #contact-form form input[type='text']:focus,
+#contact #contact-body #contact-form form input[type='email']:focus,
+#contact #contact-body #contact-form form #message:focus,
+#contact #contact-body #contact-form form input[type='submit']:focus {
+  outline: none;
+}
+
+/* ================================================================================ */
 /* DESKTOP MEDIA QUERY */
 /* DESKTOP MEDIA QUERY */
 /* DESKTOP MEDIA QUERY */
@@ -619,5 +742,45 @@ h1 span {
 @media (max-height: 569px) {
   #about-card p {
     line-height: 1.2rem;
+  }
+}
+
+@media (max-width: 840px) {
+  #contact #contact-head h2 {
+    font-size: 2rem;
+    font-weight: 400;
+  }
+
+  #contact #contact-body {
+    flex-direction: column;
+  }
+
+  #contact #contact-body #contact-social #social-wrapper a {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+  }
+
+  #contact #contact-body #contact-social #social-wrapper a i {
+    width: 2rem;
+    height: 2rem;
+    margin-right: 1rem;
+    border-radius: 50%;
+  }
+
+  #contact #contact-body #contact-seperator {
+    display: none;
+  }
+
+  #contact #contact-body #contact-seperator-mobile {
+    display: block;
+  }
+
+  #contact #contact-body #contact-seperator-mobile p {
+    color: var(--color-cultured);
+    margin: 2rem 0;
+  }
+
+  #contact #contact-body #contact-form form {
+    width: 300px;
   }
 }
