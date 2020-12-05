@@ -446,7 +446,26 @@ h1 span {
   line-height: 1.2rem;
   font-size: 0.8rem;
   font-weight: 100;
-  text-align: center;
+  text-align: justify;
+}
+
+#testimonials #testimonials-footer {
+  width: 80vw;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#testimonials #testimonials-footer a {
+  color: var(--color-cultured);
+  font-weight: 100;
+  font-size: 0.75rem;
+}
+
+#testimonials #testimonials-footer a i {
+  font-size: 0.5rem;
+  border: 1px solid var(--color-baby-blue);
+  padding: 0.5rem;
+  border-radius: 50%;
 }
 
 /* ================================================================================ */
