@@ -50,10 +50,8 @@ a {
   width: 100vw;
   display: flex;
   justify-content: center;
-  position: fixed;
-  top: 0;
-  left: 0;
-  padding: 3rem 2rem;
+  background-color: var(--color-cultured);
+  padding: 2rem 2rem;
   z-index: 2;
   transition: 0.2s;
 }
@@ -71,11 +69,13 @@ a {
 
 #navbar #inner-nav #nav-left img {
   width: 30px;
-  margin-right: 2rem;
+  margin-right: 1rem;
+  filter: invert();
 }
 
 #navbar #inner-nav #nav-left a {
-  color: var(--color-cultured);
+  /* color: var(--color-cultured); */
+  color: var(--color-grey);
 }
 
 #nav-icon {
@@ -100,12 +100,9 @@ a {
   position: absolute;
   height: 4px;
   width: 100%;
-  background: #fff;
-  /* background: #0038ff; */
-  /* background: var(--color-green-blue-crayola); */
+  background: var(--color-grey);
   opacity: 1;
   left: 0;
-  /* box-shadow: var(--box-shadow-nav); */
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
   -o-transform: rotate(0deg);
@@ -136,9 +133,9 @@ a {
 }
 
 #navbar #inner-nav #nav-right #nav-links a {
-  color: var(--color-cultured);
+  color: var(--color-grey);
   font-size: 0.75rem;
-  font-weight: 100;
+  font-weight: 300;
   padding: 0.75rem 1rem;
   transition: 0.2s;
 }
@@ -165,11 +162,11 @@ a {
 
 #navbar #inner-nav #nav-right #nav-links a:hover {
   color: #fff;
-  background-color: rgba(0, 0, 0, 0.05);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 #navbar #inner-nav #nav-right #nav-links #deals-link {
-  border: 3px solid white;
+  border: 3px solid var(--color-grey);
   border-radius: 25px;
   padding: 0.75rem 2rem;
   font-weight: 700;
@@ -900,8 +897,29 @@ h1 span {
 }
 
 @media (max-height: 569px) {
+  #navbar {
+    padding: 0.75rem 2rem;
+  }
+
   #about-card p {
     line-height: 1.2rem;
+  }
+
+  #copy-1 {
+    height: 100%;
+    padding: 2rem 4rem;
+    /* align-items: flex-start; */
+    justify-content: space-between;
+  }
+
+  #copy-1 h2 {
+    font-size: 3rem;
+    line-height: 4rem;
+    margin-left: 0;
+  }
+
+  #copy-1-form {
+    padding: 2rem 0;
   }
 
   #testimonials #testimonials-head h2 {
@@ -938,8 +956,9 @@ h1 span {
     position: absolute;
     top: 80px;
     left: 0;
-    background-color: dodgerblue;
+    background-color: var(--color-cultured);
     box-shadow: 0 15px 15px rgba(0, 0, 0, 0.25);
+    z-index: 4;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -954,7 +973,7 @@ h1 span {
     width: 200px;
     padding-bottom: 1rem;
     border-bottom: 1px solid var(--color-green-blue-crayola);
-    color: var(--color-cultured);
+    color: var(--color-grey);
   }
 
   #nav-links-mobile a i {
