@@ -70,7 +70,6 @@ a {
 #navbar #inner-nav #nav-left img {
   width: 30px;
   margin-right: 1rem;
-  filter: invert();
 }
 
 #navbar #inner-nav #nav-left a {
@@ -435,7 +434,7 @@ h1 span {
 }
 
 #services #services-cards {
-  width: 100%;
+  max-width: 1300px;
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
@@ -549,7 +548,8 @@ h1 span {
 
 #testimonials #testimonials-body {
   height: 75%;
-  width: 80%;
+  /* width: 80%; */
+  max-width: 1100px;
   padding: 4rem 0;
   display: flex;
   justify-content: space-evenly;
