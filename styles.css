@@ -415,7 +415,7 @@ h1 span {
 /* SERVICES SECTION */
 /* ================================================================================ */
 
-#services {
+.services {
   width: 100vw;
   background-color: var(--color-cultured);
   padding: 0;
@@ -426,21 +426,21 @@ h1 span {
   align-items: center;
 }
 
-#services h2 {
+.services h2 {
   font-size: 2rem;
   font-weight: 500;
   color: var(--color-grey);
   margin-top: 4rem;
 }
 
-#services #services-cards {
+.services .services-cards {
   max-width: 1300px;
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
 
-#services #services-cards .services-card {
+.services .services-cards .services-card {
   width: 90%;
   height: 400px;
   margin-top: 4rem;
@@ -449,7 +449,7 @@ h1 span {
   justify-content: space-between;
 }
 
-#services #services-cards .services-card .services-card-head {
+.services .services-cards .services-card .services-card-head {
   background-color: var(--color-lighter-blue);
   height: 40%;
   padding: 3rem 0;
@@ -458,11 +458,11 @@ h1 span {
   border-radius: 0;
 }
 
-#services #services-cards .services-card .services-card-head img {
+.services .services-cards .services-card .services-card-head img {
   width: 70px;
 }
 
-#services #services-cards .services-card .services-card-body {
+.services .services-cards .services-card .services-card-body {
   height: 50%;
   display: flex;
   flex-direction: column;
@@ -470,12 +470,12 @@ h1 span {
   align-items: center;
 }
 
-#services #services-cards .services-card .services-card-body h3 {
+.services .services-cards .services-card .services-card-body h3 {
   color: var(--color-grey);
   opacity: 0.75;
 }
 
-#services #services-cards .services-card .services-card-body p {
+.services .services-cards .services-card .services-card-body p {
   line-height: 1.2rem;
   font-size: 0.8rem;
   font-weight: 100;
@@ -483,14 +483,14 @@ h1 span {
   text-align: justify;
 }
 
-#services #services-cards .services-card .services-card-footer {
+.services .services-cards .services-card .services-card-footer {
   height: 10%;
   padding: 5px;
   display: flex;
   justify-content: center;
 }
 
-#services #services-cards .services-card .services-card-footer a {
+.services .services-cards .services-card .services-card-footer a {
   border-bottom: 3px solid rgba(255, 0, 0, 0.2);
   padding-bottom: 0.5rem;
   color: var(--color-contrast-2);
@@ -498,7 +498,7 @@ h1 span {
   transition: 0.2s;
 }
 
-#services #services-cards .services-card .services-card-footer a:hover {
+.services .services-cards .services-card .services-card-footer a:hover {
   transform: scaleX(1.1);
 }
 
@@ -847,11 +847,11 @@ h1 span {
   }
 
   /* ========== SERVICES ======================================================== */
-  #services {
+  .services {
     padding: 4rem 4rem;
   }
 
-  #services h2 {
+  .services h2 {
     font-size: 4rem;
     font-weight: 700;
     margin-left: 5.5rem;
@@ -859,29 +859,36 @@ h1 span {
     margin-top: 0;
   }
 
-  #services #services-cards {
+  .services .services-cards {
     padding: 0 4rem;
   }
 
-  #services #services-cards .services-card {
+  .services .services-cards .services-card {
     width: 300px;
   }
 
-  #services #services-cards .services-card .services-card-head {
+  .services .services-cards .services-card .services-card-head {
     border-radius: 15px 15px 0 0;
   }
 
-  #services #services-cards .services-card .services-card-body {
+  .services .services-cards .services-card .services-card-body {
     padding: 5px;
     align-items: flex-start;
   }
 
-  #services #services-cards .services-card .services-card-body p {
+  .services .services-cards .services-card .services-card-body p {
     padding: 0;
     text-align: left;
   }
 
-  #services #services-cards .services-card .services-card-footer {
+  .services .services-cards .services-card .services-card-body ul li {
+    list-style: none;
+    line-height: 1.2rem;
+    font-size: 0.8rem;
+    font-weight: 100;
+  }
+
+  .services .services-cards .services-card .services-card-footer {
     justify-content: flex-start;
   }
 
