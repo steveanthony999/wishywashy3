@@ -41,6 +41,11 @@ a {
   text-decoration: none;
 }
 
+section:focus,
+footer:focus {
+  outline: none;
+}
+
 /* ================================================================================ */
 /* NAV */
 /* NAV */
